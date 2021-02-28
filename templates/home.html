@@ -7,9 +7,10 @@
   
 </head>
 <body>
+    <h1>Diabetes Prediction </h1>
     <div class="login">
         <form action="{{ url_for('predict')}}"method="post">
-                    <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0"><br>
+                    <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg.0"><br>
                     <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
                     <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80"><br>
                     <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20"><br>
