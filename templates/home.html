@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>home</title>
+
+    <!-- Local css -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   
 </head>
 <body>
-    <h1>Diabetes Prediction </h1>
-    <div class="login">
-        <form action="{{ url_for('predict')}}"method="post">
+    <h1 class="text-white text-center">Diabetes Prediction </h1>
+    <div class="login" class="col-sm-100">
+        <form action="{{ url_for('predict')}}"method="post" class="text-white text-center">
                     <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg.0"><br>
                     <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
                     <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80"><br>
